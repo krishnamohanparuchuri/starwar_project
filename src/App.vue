@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <nav-bar></nav-bar>
     <router-view/>
   </div>
 </template>
+
+<script>
+import NavBar from '../src/components/NavBar.vue'
+export default {
+  name:'App',
+  components:{
+    'nav-bar':NavBar
+  }
+}
+</script>
 
 <style>
 #app {
@@ -14,7 +21,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: orangered;
+}
+body{
+  width:1200px;
+  height:1200px;
+  background-color: black;
+  margin:0 auto;
 }
 
 #nav {
