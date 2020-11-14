@@ -26,10 +26,18 @@ export default {
 </script>
 
 <style scoped>
+.pagination-container{
+  display:flex;
+  justify-content:center;
+}
+li{
+  width:30px;
+  height:50px;
+    list-style: none;
+}
 .pagination-container > button{
      width:30px;
      height:50px;
      margin:5px;
-
  }
 </style>

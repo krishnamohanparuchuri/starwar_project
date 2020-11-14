@@ -2,7 +2,7 @@
   <div class="starwar-container">
       <div class="starwar-header">
          <h1>Rendering the starwar people details</h1>
-         <input type="text" name="searchButton" id="searchButton" v-model="search">
+         <input type="text" name="searchButton" id="searchButton" placeholder="Enter some name" v-model="search">
       </div>
       <div class="starwar-body">
        <people-info v-for="people in filteredPeoples"
@@ -89,5 +89,9 @@ people-info{
    align-items: center;
    height:100px;
 
+}
+input{
+    font-size:24px;
+    color:black;
 }
 </style>

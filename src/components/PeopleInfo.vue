@@ -1,7 +1,7 @@
 <template>
   <div class="people-container">
-      <h3>First Name: {{this.firstName}}</h3>
-      <h3>Surname: {{this.lastName}}</h3>
+      <h3>Firstname: {{firstName}}</h3>
+      <h3>Lastname: {{lastName}}</h3>
       <p @click="toggleDetails">{{isOpen ? 'Hide Info' : 'Show Details'}}</p>
       <div v-show="isOpen" class="details-container" >
          <h4>Gender: {{gender}}</h4>
